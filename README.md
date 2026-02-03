@@ -1,4 +1,3 @@
-cat <<EOF > README.md
 # GoBroker: Distributed Message Queue (Go/TCP)
 
 **GoBroker** is a high-performance, fault-tolerant message broker built from scratch in Go. It bypasses HTTP to use a **custom binary protocol over raw TCP**, achieving low-latency communication with **Write-Ahead Logging (WAL)** for data durability.
@@ -16,4 +15,4 @@ cat <<EOF > README.md
 1. **Start Server:** \`go run main.go protocol.go\`
 2. **Start Subscriber:** \`cd client && go run main.go protocol.go sub news\`
 3. **Publish Message:** \`cd client && go run main.go protocol.go pub news "Hello!"\`
-EOF
+
